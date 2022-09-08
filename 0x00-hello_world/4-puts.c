@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/* prints a statement and returns 0 when successful */
+/**
+ * main - prints the string
+ * Returns: 0 after printing to the standard output
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
