@@ -28,7 +28,7 @@ putchar(' ');
 
 second++;
 }
-first++
+first++;
 }
 return (0);
 }
