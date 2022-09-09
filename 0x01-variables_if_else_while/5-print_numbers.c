@@ -9,8 +9,8 @@ int main(void)
 int num;
 for (num = 0; num < 10; num++)
 {
-puts(num);
+putchar(num);
 }
-puts('\n');
+putchar('\n');
 return (0);
 }
