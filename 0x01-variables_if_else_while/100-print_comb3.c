@@ -19,7 +19,7 @@ if (first != second && first < second)
 {
 putchar(first);
 putchar(second);
-if (first == 57 && second == 56)
+if (first == 56 && second == 57)
 {
 break;
 }
