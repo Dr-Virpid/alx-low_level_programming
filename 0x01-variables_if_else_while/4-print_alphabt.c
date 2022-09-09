@@ -10,11 +10,15 @@ char lowercase = 'a';
 
 while (lowercase <= 'z')
 {
-if (lowercase != 'q' || lowercase != 'e')
+if (lowercase == 'q' || lowercase == 'e')
+{
+lowercase++;
+}
+else
 {
 putchar(lowercase);
-}
 lowercase++;
+}
 }
 putchar('\n');
 return (0);
