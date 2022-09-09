@@ -8,10 +8,11 @@
 int main(void)
 {
 int first = 48;
-int second = 48;
+int second;
 
 while (first < 58)
 {
+second = 48;
 while (second < 58)
 {
 if (first != second && first < second)
@@ -25,7 +26,6 @@ break;
 putchar(',');
 putchar(' ');
 }
-
 second++;
 }
 first++;
