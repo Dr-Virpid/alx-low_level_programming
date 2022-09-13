@@ -10,7 +10,7 @@ int i = 0;
 char letter[] = {'_','p','u','t','c','h','a','r'};
 while (i < 8)
 {
-d = letter[i];
+int d = letter[i];
 _putchar(d);
 }
 return (0);
