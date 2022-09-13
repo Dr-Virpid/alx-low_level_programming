@@ -17,6 +17,6 @@ c = c % 100;
 else if (c > 0)
 c = c % 10;
 else if (c == 0)
-c = 00
+c = 00;
 return (c);
 }
