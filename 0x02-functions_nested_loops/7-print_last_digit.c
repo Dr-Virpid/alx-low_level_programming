@@ -7,16 +7,16 @@
  */
 int print_last_digit(int c)
 {
+c %= 10;
 if (c < 0)
 {
-c *= -1;
-c = c % 10;
+_putchar(-c + 48);
+return (-c)
 }
-else if (c > 100)
-c = c % 100;
-else if (c > 0)
-c = c % 10;
-else if (c == 0)
-c = 00;
+else
+{
+_putchar(c + 48);
 return (c);
 }
+}
+
