@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - prints out a string
@@ -10,7 +10,7 @@ int i = 0;
 char letter[] = {'_','p','u','t','c','h','a','r'};
 while (i < 8)
 {
-int d = letter[i];
+char d = letter[i];
 _putchar(d);
 }
 return (0);
