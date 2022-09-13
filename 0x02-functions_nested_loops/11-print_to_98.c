@@ -25,5 +25,5 @@ n--;
 }
 }
 printf("%d", 98);
-_putchar('\n');
+puts('\n');
 }
