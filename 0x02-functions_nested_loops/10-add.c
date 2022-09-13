@@ -6,7 +6,7 @@
  * @num2: second number
  * Return: result of the addition
  */
-int add(int num1, int num 2)
+int add(int num1, int num2)
 {
 int result = num1 * num2;
 return (result);
