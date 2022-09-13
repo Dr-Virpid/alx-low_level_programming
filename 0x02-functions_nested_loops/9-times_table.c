@@ -14,7 +14,7 @@ _putchar(48);
 j = 1;
 while (j < 10)
 {
-k = j*i;
+k = (j * i);
 _putchar(44);
 _putchar(32);
 if (k < 10)
