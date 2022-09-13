@@ -8,7 +8,7 @@
 int main(void)
 {
 int i = 0;
-char letter[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+char letter[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\0'};
 while (i < 8)
 {
 char d = letter[i];
