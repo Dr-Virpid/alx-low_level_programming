@@ -11,7 +11,7 @@ c %= 10;
 if (c < 0)
 {
 _putchar(-c + 48);
-return (-c)
+return (-c);
 }
 else
 {
