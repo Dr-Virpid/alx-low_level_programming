@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * _abs - makes all integer positive
