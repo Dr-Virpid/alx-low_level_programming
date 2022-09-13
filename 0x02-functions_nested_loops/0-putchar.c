@@ -13,6 +13,7 @@ while (i < 8)
 {
 char d = letter[i];
 _putchar(d);
+i++;
 }
 return (0);
 }
