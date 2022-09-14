@@ -4,6 +4,7 @@
  * main - prints the sum of numbers below 1024 that are divisible
  * by 5 or 3
  * Return: none
+ */
 void main(void)
 {
 int i, sum = 0;
