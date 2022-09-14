@@ -3,9 +3,9 @@
 /**
  * main - prints the sum of numbers below 1024 that are divisible
  * by 5 or 3
- * Return: none
+ * Return: 0 always
  */
-void main(void)
+int main(void)
 {
 int i, sum = 0;
 while (i < 1024)
@@ -15,4 +15,5 @@ sum += i;
 i++;
 }
 printf("%d\n", sum);
+return (0);
 }
