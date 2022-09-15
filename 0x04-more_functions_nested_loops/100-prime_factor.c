@@ -6,17 +6,18 @@ int prime(int a);
  * main - finds the highest prime factor of a number
  * Return: none
  */
-void main(void)
+int main(void)
 {
 long int i, j;
 int k;
 i = 612852475143;
-for (k = 3; k <= (i / 2); k++;)
+for (k = 2; k <= (i / 2); k++;)
 {
 if (i % k == 0 && prime(k) == 0)
 j = k;
 }
-printf("%d\n", j);
+printf("%li\n", j);
+return (0);
 }
 
 /**
