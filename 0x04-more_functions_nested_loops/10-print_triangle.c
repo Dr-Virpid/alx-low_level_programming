@@ -5,7 +5,7 @@
  * @size: size of triangle
  * Return: none
  */
-void print_triangle(int size)
+void print_triangle(int n)
 {
 int i, j, k;
 if (n > 0)
