@@ -11,7 +11,7 @@ int main(void)
 long int i, j;
 int k;
 i = 612852475143;
-for (k = 2; k <= (i / 2); k++;)
+for (k = 2; k <= (i / 2); k++)
 {
 if (i % k == 0 && prime(k) == 0)
 j = k;
