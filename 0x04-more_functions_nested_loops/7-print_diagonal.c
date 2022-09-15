@@ -16,7 +16,9 @@ while (n--)
 for (d = i - n; d > 0; d--)
 _putchar(' ');
 _putchar('\\');
+_putchar('\n')
 }
 }
+else
 _putchar('\n');
 }
