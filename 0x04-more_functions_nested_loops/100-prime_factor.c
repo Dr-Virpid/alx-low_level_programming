@@ -14,9 +14,9 @@ i = 612852475143;
 for (k = 3; k <= (i / 2); k++;)
 {
 if (i % k == 0 && prime(k) == 0)
-j = k
+j = k;
 }
-printf("%d", j);
+printf("%d\n", j);
 }
 
 /**
