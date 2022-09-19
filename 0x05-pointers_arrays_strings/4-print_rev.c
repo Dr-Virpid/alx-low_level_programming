@@ -11,10 +11,10 @@ int i = 0;
 
 while (*(i + s) != '\0')
 i++;
-while (i >= 0)
+while (i > 0)
 {
 _putchar(*(s + i));
 i--;
 }
-/* _putchar('\n'); */
+_putchar('\n');
 }
