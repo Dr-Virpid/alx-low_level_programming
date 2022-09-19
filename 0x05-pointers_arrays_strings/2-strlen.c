@@ -8,7 +8,7 @@
 int _strlen(char *s)
 { /* pointers actually stores the address of the first element of the array */
 int n;
-for (n = 0; *(s + n) != '\n'; n++)
+for (n = 0; *(s + n) != '\0'; n++)
 continue;
 return (n);
 }
