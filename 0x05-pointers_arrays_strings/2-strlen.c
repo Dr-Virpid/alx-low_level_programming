@@ -6,7 +6,7 @@
  * Return: length of the string
  */
 int _strlen(char *s)
-{ /* pointers actually stores the address of the first element of the array
+{ /* pointers actually stores the address of the first element of the array */
 int n;
 for (n = 0; *(s + n) != '\n'; n++)
 continue;
