@@ -8,6 +8,7 @@
 int _strlen(char *s)
 {
 int n;
-n = sizeof(*s) / sizeof(*(s)[0]);
+char i[] = *s;
+n = sizeof(i) / sizeof(i[0]);
 return (n);
 }
