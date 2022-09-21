@@ -21,7 +21,7 @@ i++;
 while (j >= 0)
 {
 *(dest + i) = *(j + src);
-if(*(j + src) == '\0')
+if (*(j + src) == '\0')
 break;
 j++;
 i++;
