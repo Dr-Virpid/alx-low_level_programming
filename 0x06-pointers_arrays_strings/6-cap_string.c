@@ -20,6 +20,11 @@ i++;
 return (str);
 }
 
+/**
+ * symb - checks if the input is a separator symbol
+ * @ch: character to be checked
+ * Return: 1 if its a separator symbol, 0 otherwise
+ */
 int symb(char ch)
 {
 /* check for these symbols , ; . ! ? " ( ) { and } */
