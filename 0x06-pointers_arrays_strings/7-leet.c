@@ -15,13 +15,12 @@ while (*(str + i) != '\0')
 {
 for (j = 0; j < 10; j++)
 {
-if (*(str + i) == repl[j])
+if (*(str + i) == replace[j])
 *(str + i) = replacement[j];
 }
 
 i++;
 }
-
 
 return (str);
 }
