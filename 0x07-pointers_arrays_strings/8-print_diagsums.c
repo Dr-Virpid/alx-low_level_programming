@@ -20,5 +20,5 @@ for (j = size -1; j >= 0; j--)
 	sum2 += a[i][j];
 	i++;
 }
-printf("%li, %li\n", sum1, sum2);
+printf("%i, %i\n", sum1, sum2);
 }
