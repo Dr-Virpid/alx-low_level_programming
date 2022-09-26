@@ -10,7 +10,7 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-int i;
+unsigned int i; /* has to be same type as n since you are comparing */
 for (i = 0; i < n; i++)
 {
 s[i] = b;
