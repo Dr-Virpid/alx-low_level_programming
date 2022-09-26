@@ -22,5 +22,5 @@ for (i = 0; haystack[i] != '\0'; i++)
 		return (haystack + i);
 	}
 }
-return ('\0');
+return (0);
 }
