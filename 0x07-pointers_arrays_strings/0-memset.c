@@ -6,7 +6,7 @@
  * @s: pointer to the string
  * @b: character to replace with
  * @n: number of characters to replace
- * Return:
+ * Return: address of s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
