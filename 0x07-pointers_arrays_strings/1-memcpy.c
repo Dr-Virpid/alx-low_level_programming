@@ -6,7 +6,7 @@
  * destination array
  * @dest: destination array
  * @src: source array
- * @n:
+ * @n: number of bytes to copy
  * Return: address to destination array
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
