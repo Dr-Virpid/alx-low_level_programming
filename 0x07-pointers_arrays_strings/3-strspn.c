@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _strspn - returns the nu+++++++++++++++++++++
+ * _strspn - returns the number of bytes in which the prefix of the first string
+ * is similar to the second string+
  * @s: first string
  * @accept: second string
  * Return: number of bytes in s that are also in accept
