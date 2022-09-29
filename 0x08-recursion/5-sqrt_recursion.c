@@ -12,8 +12,10 @@ int _sqrt_recursion(int n)
 {
 if (n == 1)
 return (1);
+else if (n > 1000000)
+return (-1 * _sqrt(n, n / 300));
 else if (n > 3)
-return (-1 * _sqrt(n, n/2));
+return (-1 * _sqrt(n, n / 2));
 return (-1);
 }
 
