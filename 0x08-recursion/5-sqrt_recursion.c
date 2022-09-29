@@ -8,5 +8,17 @@
  */
 int _sqrt_recursion(int n)
 {
+if (n > 0)
+return (-1 * sqrt(n, n));
+return (-1);
+}
 
+int sqrt(int n, int y)
+{
+if (y * y == n)
+return (-y);
+else if (y <= 1)
+return (1);
+else
+return (1 * sqrt(n, y - 1));
 }
