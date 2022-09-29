@@ -1,5 +1,7 @@
 #include "main.h"
 
+int _sqrt(int, int);
+
 /**
  * _sqrt_recursion - checks the input to see if its has a natural square root
  * @n: number input
@@ -13,6 +15,12 @@ return (-1 * _sqrt(n, n));
 return (-1);
 }
 
+/**
+ * _sqrt - finds if a number has a natural square root
+ * @n: number to check
+ * @y: counter that reduces by one with each function call
+ * Return: a number
+ */
 int _sqrt(int n, int y)
 {
 if (y * y == n)
@@ -20,5 +28,5 @@ return (-y);
 else if (y <= 1)
 return (1);
 else
-return (1 * sqrt(n, y - 1));
+return (1 * _sqrt(n, y - 1));
 }
