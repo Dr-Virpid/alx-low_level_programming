@@ -1,6 +1,6 @@
 #include "main.h"
 
-long int _sqrt(long int, long int);
+int _sqrt(unsigned int, unsigned int);
 
 /**
  * _sqrt_recursion - checks the input to see if its has a natural square root
@@ -21,7 +21,7 @@ return (-1);
  * @y: counter that reduces by one with each function call
  * Return: a number
  */
-long int _sqrt(long int n, long int y)
+int _sqrt(unsigned int n, unsigned int y)
 {
 if (y * y == n)
 return (-y);
