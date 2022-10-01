@@ -7,7 +7,7 @@
  * @argv: array that stores command line arguments
  * Return: 0 after completion or 1 if two numbers are not given
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 
 if (argc == 3)
