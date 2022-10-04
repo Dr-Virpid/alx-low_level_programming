@@ -11,7 +11,8 @@ char *_strdup(char *str)
 {
 	if (str == NULL)
 		return (NULL);
-	int i, j;
+	int i;
+	int j;
 	char *ptr;
 
 	for (i = 0; str[i] != '\0'; i++)
@@ -21,7 +22,7 @@ char *_strdup(char *str)
 	if (ptr == NULL)
 		return (NULL);
 
-	for (j = 0; j =< i; j++)
+	for (j = 0; j <= i; j++)
 		ptr[j] = str[j];
 
 	return (ptr);
