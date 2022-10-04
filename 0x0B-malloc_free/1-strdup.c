@@ -7,7 +7,7 @@
  * Return: address of the string or NULL if space could not be allocated or
  * value of the string is NULl
  */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	if (str == NULL)
 		return (NULL);
