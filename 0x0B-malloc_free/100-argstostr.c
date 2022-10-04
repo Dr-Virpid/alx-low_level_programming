@@ -6,6 +6,7 @@
  * input separated by a newline
  * @ac: number of terminal input
  * @av: terminal input
+ * Return: address to the concatenated string
  */
 char *argstostr(int ac, char **av)
 {
