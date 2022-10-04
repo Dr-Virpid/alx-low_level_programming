@@ -6,6 +6,7 @@
  * @grid: pointer to a 2d array in heap
  * @height: no of arrays in the 2d array
  * Return: none
+ */
 void free_grid(int **grid, int height)
 {
 int i;
