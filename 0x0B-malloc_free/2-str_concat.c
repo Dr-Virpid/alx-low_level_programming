@@ -19,9 +19,11 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-for (k = 0; s1[k] != '\0'; k++);
+for (k = 0; s1[k] != '\0'; k++)
+;
 
-for (l = 0; s1[l] != '\0'; l++);
+for (l = 0; s2[l] != '\0'; l++)
+;
 
 ptr = malloc(sizeof(char) * (k + l + 1));
 if (ptr == NULL)
