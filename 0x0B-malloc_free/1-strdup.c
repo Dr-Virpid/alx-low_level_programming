@@ -9,14 +9,14 @@
  */
 char *_strdup(char *str)
 {
+	int i = 0;
+	int j = 0;
+	char *ptr;
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-
-	int i = 0;
-	int j = 0;
-	char *ptr;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
