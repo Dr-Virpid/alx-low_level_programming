@@ -23,8 +23,10 @@ s2 = "";
 for (i = 0; s1[i] != '\0'; i++)
 ;
 
-for (j = 0; s2[j] != '\0' && j < n; i++)
+for (j = 0; s2[j] != '\0'; i++)
 ;
+if (j >= n)
+j = n;
 
 ptr = malloc(j + i + 1);
 if (ptr == NULL)
