@@ -35,5 +35,6 @@ free(ptr);
 return (NULL);
 }
 
+free(ptr);
 return (nptr);
 }
