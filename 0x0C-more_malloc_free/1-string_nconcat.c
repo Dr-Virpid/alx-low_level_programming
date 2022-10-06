@@ -7,6 +7,8 @@
  * @s1: first string
  * @s2: second string
  * @n: number of characters in s2 to concatenate to s1
+ * Return: address of the concatenated string
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int i, j, k, l;
