@@ -11,5 +11,22 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
+char *nptr;
+
+if (new_size == old_size)
+return (ptr);
+
+if (ptr == NULL)
+{
+nptr = malloc(new_size);
+return (nptr);
+}
+
+if (new_size == 0)
+{
+free(ptr);
+return (NULL);
+}
+
 
 }
