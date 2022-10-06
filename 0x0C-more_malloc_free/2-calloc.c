@@ -10,7 +10,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int memosize;
+unsigned int memosize, i;
 char *ptr;
 
 memosize = nmemb * size;
