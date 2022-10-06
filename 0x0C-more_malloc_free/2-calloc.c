@@ -10,18 +10,18 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int memsize;
+unsigned int memosize;
 char *ptr;
 
-memsize = nmemb * size;
-if (memsize == 0)
+memosize = nmemb * size;
+if (memosize == 0)
 return (NULL);
 
-ptr = malloc(memsize);
+ptr = malloc(memosize);
 if (ptr == NULL)
 return (NULL);
 
-for (i = 0; i < memsize; i++)
+for (i = 0; i < memosize; i++)
 *(ptr + i) = 0;
 
 return (ptr);
