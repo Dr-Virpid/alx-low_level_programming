@@ -36,10 +36,5 @@ free(ptr);
 return (NULL);
 }
 
-for (i = 0; ptr[i] != '\0'; i++)
-{
-nptr[i] = ptr[i];
-}
-
 return (nptr);
 }
