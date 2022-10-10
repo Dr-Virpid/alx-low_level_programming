@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_dog - prints out all types in struct dog
@@ -16,9 +16,6 @@ printf("Name: (nil)\n");
 else
 printf("Name: %s\n", d->name);
 
-if (d->age == NULL)
-printf("Age: (nil)\n");
-else
 printf("Age: %.6f\n", d->age);
 
 if (d->owner == NULL)
