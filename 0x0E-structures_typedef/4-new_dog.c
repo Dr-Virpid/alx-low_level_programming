@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * new_dog - creates a struct of type dog_t and initialize
@@ -12,8 +11,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int i, j;
-char *ptr1, *ptr2;
+int i, j, k, l;
 dog_t *newdog;
 
 newdog = malloc(sizeof(*newdog));
@@ -26,8 +24,10 @@ for (i = 0; name[i] != '\0'; i++)
 for (j = 0; owner[j] != '\0'; j++)
 ;
 
-ptr1 = malloc(i + 1);
-if (ptr1 == NULL)
+newdog->name = malloc(i + 1);
+newdog->owner = malloc(j + 1);
+
+if (newdog->name == NULL || newdog->owner == NULL)
 {
 free(newdog->name);
 free(newdog->owner);
@@ -35,21 +35,15 @@ free(newdog);
 return (NULL);
 }
 
-ptr2 = malloc(j + 1);
-if (ptr2 == NULL)
-{
-free(newdog->name);
-free(newdog->owner);
-free(newdog);
-return (NULL);
-}
+for (k = 0; k < i; k++)
+newdog->name[k] = name[k];
+newdog->name[k] = '\0';
 
-strcpy(ptr1, name);
-strcpy(ptr2, owner);
-
-newdog->name = ptr1;
 newdog->age = age;
-newdog->owner = ptr2;
+
+for (l = 0; l < j; l++)
+newdog->owner[l] = owner[l];
+newdog->owner[l] = '\0';
 
 return (newdog);
 }
