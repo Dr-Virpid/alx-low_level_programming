@@ -20,8 +20,6 @@ newdog = malloc(sizeof(*newdog));
 if (newdog == NULL || name == NULL || owner == NULL)
 return (NULL);
 
-newdog->age = age;
-
 for (i = 0; name[i] != '\0'; i++)
 ;
 
@@ -31,7 +29,6 @@ for (j = 0; owner[j] != '\0'; j++)
 ptr1 = malloc(i + 1);
 if (ptr1 == NULL)
 {
-free(newdog->age);
 free(newdog->name);
 free(newdog->owner);
 free(newdog);
@@ -41,7 +38,6 @@ return (NULL);
 ptr2 = malloc(j + 1);
 if (ptr2 == NULL)
 {
-free(newdog->age);
 free(newdog->name);
 free(newdog->owner);
 free(newdog);
@@ -52,6 +48,7 @@ strcpy(ptr1, name);
 strcpy(ptr2, owner);
 
 newdog->name = ptr1;
+newdog->age = age;
 newdog->owner = ptr2;
 
 return (newdog);
