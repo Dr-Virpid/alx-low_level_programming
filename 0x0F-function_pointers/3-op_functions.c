@@ -46,6 +46,9 @@ return (mul);
  */
 int op_div(int a, int b)
 {
+if (b == 0)
+return (NULL);
+
 int division;
 division = a / b;
 return (division);
@@ -59,6 +62,9 @@ return (division);
  */
 int op_mod(int a, int b)
 {
+if (b == 0)
+return (NULL);
+
 int mod;
 mod = a % b;
 return (mod);
