@@ -30,11 +30,12 @@ num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 
 calc = func(num1, num2);
-if (calc == NULL)
+if (calc == -99)
 {
 printf("Error\n");
 exit(100);
 }
 
 printf("%i\n", calc);
+return (0);
 }
