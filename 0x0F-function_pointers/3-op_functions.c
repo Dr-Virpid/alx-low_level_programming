@@ -46,9 +46,9 @@ return (mul);
  */
 int op_div(int a, int b)
 {
-int div;
-div = a / b;
-return (div);
+int division;
+division = a / b;
+return (division);
 }
 
 /**
