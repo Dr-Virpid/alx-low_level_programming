@@ -48,10 +48,11 @@ return (mul);
  */
 int op_div(int a, int b)
 {
+int division;
+
 if (b == 0)
 return (-99);
 
-int division;
 division = a / b;
 return (division);
 }
@@ -64,10 +65,11 @@ return (division);
  */
 int op_mod(int a, int b)
 {
+int mod;
+
 if (b == 0)
 return (-99);
 
-int mod;
 mod = a % b;
 return (mod);
 }
