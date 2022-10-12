@@ -1,5 +1,6 @@
 #include "3-calc.h"
-#include <stdlib.h>
+#include <stdio.h>
+
 /**
  * main - accepts user arguments and performs mathematical
  * operation on them
