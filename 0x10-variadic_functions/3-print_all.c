@@ -8,7 +8,13 @@
 void print_all(const char * const format, ...)
 {
 int i, j;
-char *typ = "cifs";
+char *str;
+int num;
+float flt;
+char letter;
+va_list args;
+
+va_start(args, format);
 
 i = 0;
 while (format[i] != '\0')
@@ -18,6 +24,13 @@ j = 0;
 while (typ[j] != '\0')
 {
 
+switch (format[i])
+{
+case "c":
+letter = va_arg(args, char);
+printf
+
+}
 
 j++;
 }
