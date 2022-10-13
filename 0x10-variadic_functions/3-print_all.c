@@ -10,8 +10,8 @@ void print_all(const char * const format, ...)
 int i, j = 0, count = 0;
 char *str, *type = "cifs";
 int num;
-float flt;
-char letter;
+double flt;
+int letter;
 va_list args;
 
 va_start(args, format);
@@ -26,7 +26,7 @@ while (format[i] != '\0' && format)
 switch (format[i])
 {
 case 'c':
-letter = va_arg(args, char);
+letter = va_arg(args, int);
 printf("%c", letter);
 count = 1;
 break;
@@ -39,7 +39,7 @@ break;
 
 case 'f':
 flt = va_arg(args, float);
-printf("%f", flt);
+printf("%lf", flt);
 count = 1;
 break;
 
