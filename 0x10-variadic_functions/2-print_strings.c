@@ -3,7 +3,7 @@
 
 /**
  * print_strings - prints out all strings passed into the function
- * @separator - separates each string
+ * @separator: - separates each string
  * @n: number of string arguments
  */
 void print_strings(const char *separator, const unsigned int n, ...)
