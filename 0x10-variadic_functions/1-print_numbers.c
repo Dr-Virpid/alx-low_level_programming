@@ -18,7 +18,7 @@ for (i = 0; i < n; i++)
 {
 if (separator == NULL)
 printf("%d", va_arg(args, int));
-elif (i == n - 1)
+else if (i == n - 1)
 printf("%d\n", va_arg(args, int));
 else
 printf("%d%s", va_arg(args, int), separator);
