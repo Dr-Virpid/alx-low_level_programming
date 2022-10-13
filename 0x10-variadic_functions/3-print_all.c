@@ -16,7 +16,7 @@ va_list args;
 
 va_start(args, format);
 
-while (format[j] != '\0')
+while (format[j] != '\0' && format)
 j++;
 
 i = 0;
