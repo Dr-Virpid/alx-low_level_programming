@@ -7,8 +7,8 @@
  */
 void print_all(const char * const format, ...)
 {
-int i, j;
-char *str;
+int i, j = 0, count = 0;
+char *str, *type = "cifs";
 int num;
 float flt;
 char letter;
@@ -16,26 +16,50 @@ va_list args;
 
 va_start(args, format);
 
-i = 0;
-while (format[i] != '\0')
-{
+while (format[j] != '\0')
+j++;
 
-j = 0;
-while (typ[j] != '\0')
+i = 0;
+while (format[i] != '\0' && format)
 {
 
 switch (format[i])
 {
-case "c":
+case 'c':
 letter = va_arg(args, char);
-printf
+printf("%c", letter);
+count = 1;
+break;
 
+case 'i':
+num = va_arg(args, int);
+print("%d", num);
+count = 1;
+break;
+
+case 'f':
+flt = va_arg(args, float);
+printf("%f", flt);
+count = 1;
+break;
+
+case 's':
+str = va_arg(args, char *);
+if (str == NULL)
+{
+printf("(nil)");
+count = 1;
+break;
+}
+printf("%s", str);
+count = 1;
+break;
 }
 
-j++;
-}
+if (c && i < j - 1)
+printf(", ");
 
 i++;
 }
-
+printf("\n");
 }
