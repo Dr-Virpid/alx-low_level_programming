@@ -8,7 +8,7 @@
 void print_all(const char * const format, ...)
 {
 int i, j = 0, count = 0;
-char *str, *type = "cifs";
+char *str;
 int num;
 double flt;
 int letter;
@@ -33,13 +33,13 @@ break;
 
 case 'i':
 num = va_arg(args, int);
-print("%d", num);
+printf("%d", num);
 count = 1;
 break;
 
 case 'f':
 flt = va_arg(args, double);
-printf("%lf", flt);
+printf("%f", flt);
 count = 1;
 break;
 
