@@ -38,7 +38,7 @@ count = 1;
 break;
 
 case 'f':
-flt = va_arg(args, float);
+flt = va_arg(args, double);
 printf("%lf", flt);
 count = 1;
 break;
@@ -56,7 +56,7 @@ count = 1;
 break;
 }
 
-if (c && i < j - 1)
+if (count && i < j - 1)
 printf(", ");
 
 i++;
