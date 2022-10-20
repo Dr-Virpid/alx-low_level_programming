@@ -2,7 +2,8 @@
 #define _LUST_H_
 
 #include <stdlib.h>
-
+#include <string.h>
+#include <stdio.h>
 
 /**
  * struct linked_list - linked list
