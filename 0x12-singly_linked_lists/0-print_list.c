@@ -10,14 +10,11 @@
  */
 size_t print_list(const list_t *h)
 {
-	unsigned int count;
-
-	if (h == NULL)
-		return (0);
+	unsigned int count = 0;
 
 	for (; h != NULL; h = h->next, count++)
 		if (h->str == NULL)
-			printf("[0] (nil)");
+			printf("[0] (nil)\n");
 		else
 			printf("[%d] %s\n", h->len, h->str);
 
