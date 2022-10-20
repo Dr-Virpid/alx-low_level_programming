@@ -19,7 +19,7 @@ ptr->str = strdup(str);
 ptr->len = strlen(str);
 ptr->next = *head;
 
-head = ptr;
+*head = ptr;
 
 return (*head);
 
