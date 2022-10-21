@@ -3,7 +3,7 @@
 
 /**
  * add_node_end - add a new node to the end of the linked list
- * @head double pointer to the first node in the list
+ * @head: double pointer to the first node in the list
  * @str: string to add to the new node
  * Return: pointer to the first node
  */
