@@ -19,9 +19,15 @@ n_node->str = strdup(str);
 n_node->len = strlen(str);
 n_node->next = NULL;
 
-for (temp = *head; temp->next != NULL; temp = temp->next)
+temp = *head;
+
+if (temp == NULL)
+*head = n_node;
+else
+{
+for (; temp->next != NULL; temp = temp->next)
 ;
 temp->next = n_node;
-
+}
 return (*head);
 }
