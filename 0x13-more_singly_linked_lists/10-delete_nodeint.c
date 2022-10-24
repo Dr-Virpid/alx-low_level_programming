@@ -17,8 +17,11 @@ return (-1);
 
 ptr = *head;
 
+if (index > 0)
+{
 for (i = 0; ptr != NULL && i < index - 1; i++)
 ptr = ptr->next;
+}
 
 if (!(ptr) || (ptr->next == NULL && index != 0))
 return (-1);
