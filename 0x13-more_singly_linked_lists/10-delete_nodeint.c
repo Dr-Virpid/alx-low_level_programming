@@ -20,7 +20,7 @@ ptr = *head;
 for (i = 0; ptr != NULL && i < index - 1; i++)
 ptr = ptr->next;
 
-if (!(ptr) || (ptr->next == NULL && index != 0)
+if (!(ptr) || (ptr->next == NULL && index != 0))
 return (-1);
 
 if (index == 0 && ptr->next == NULL)
