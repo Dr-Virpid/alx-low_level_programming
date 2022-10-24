@@ -26,8 +26,11 @@ ptr = ptr->next;
 if (!(ptr) || (ptr->next == NULL && index != 0))
 return (-1);
 
-if (index == 0 && ptr->next == NULL)
+if (index == 0)
+{
+*head = ptr->next;
 free(ptr);
+}
 else
 {
 temp = ptr->next;
