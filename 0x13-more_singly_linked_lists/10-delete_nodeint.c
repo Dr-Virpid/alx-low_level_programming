@@ -9,7 +9,7 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-listint_t *ptr;
+listint_t *ptr, *temp;
 unsigned int i;
 
 if (*head == NULL || !(head))
