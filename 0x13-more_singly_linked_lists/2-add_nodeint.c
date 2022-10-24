@@ -14,21 +14,12 @@ listint_t *ptr;
 
 ptr = malloc(sizeof(listint_t));
 if (ptr == NULL)
-return(NULL);
+return (NULL);
 
 ptr->n = n;
-
-if (*head = NULL)
-{
-ptr->next = NULL;
-*head = ptr;
-return (*head);
-}
-else
-{
 ptr->next = *head;
 *head = ptr;
+
 return (*head);
-}
 
 }
