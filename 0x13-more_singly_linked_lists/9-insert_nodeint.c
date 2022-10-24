@@ -22,7 +22,7 @@ ptr = *head;
 for (i = 0; ptr != NULL && i < idx - 1; i++, ptr = ptr->next)
 ;
 
-if (ptr == NULL && i < idx)
+if (ptr == NULL && idx != 0)
 return (NULL);
 else
 {
