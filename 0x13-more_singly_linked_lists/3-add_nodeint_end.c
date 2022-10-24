@@ -27,7 +27,7 @@ return (*head);
 
 for (; temp->next != NULL; temp = temp->next)
 ;
-temp>next = nnode;
+temp->next = nnode;
 
 return (nnode);
 
