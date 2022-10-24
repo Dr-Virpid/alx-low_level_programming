@@ -19,8 +19,11 @@ return (NULL);
 nnode->n = n;
 
 ptr = *head;
+if (idx > 0)
+{
 for (i = 0; ptr != NULL && i < idx - 1; i++, ptr = ptr->next)
 ;
+}
 
 if (ptr == NULL && idx != 0)
 return (NULL);
