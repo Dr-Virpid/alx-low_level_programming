@@ -5,6 +5,7 @@
  * get_bit - returns the value of a bit at a given index
  * @n: decimal integer
  * @index: index of bit
+ * Return: value of bit or -1 otherwise
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
