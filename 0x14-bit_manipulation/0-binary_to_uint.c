@@ -9,25 +9,25 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int len, i, uint;
+unsigned int len, i, result;
 
 if (b == NULL)
 return (0);
 
 len = strlen(b);
 
-uint = 0
+result = 0
 for (i = 0; len > 0; len--, i++)
 {
 if (b[len] == '0')
-uint += 0;
+result += 0;
 else if (b[len] == '1')
-uint += npower(2, i);
+result += npower(2, i);
 else
 return (0);
 }
 
-return (uint);
+return (result);
 }
 
 
