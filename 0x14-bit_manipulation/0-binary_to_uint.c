@@ -17,7 +17,7 @@ return (0);
 len = strlen(b);
 len--;
 
-result = 0
+result = 0;
 for (i = 0; len >= 0; len--, i++)
 {
 if (b[len] == '0')
