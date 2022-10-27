@@ -15,14 +15,13 @@ if (b == NULL)
 return (0);
 
 len = strlen(b);
-len--;
 
 result = 0;
-for (i = 0; len >= 0; len--, i++)
+for (i = 0; len > 0; len--, i++)
 {
-if (b[len] == '0')
+if (b[len - 1] == '0')
 result += 0;
-else if (b[len] == '1')
+else if (b[len - 1] == '1')
 result += npower(2, i);
 else
 return (0);
