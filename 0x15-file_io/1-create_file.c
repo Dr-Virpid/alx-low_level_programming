@@ -22,7 +22,7 @@ return (-1);
 
 if (!text_content)
 {
-write(fd, "", 1);
+write(fd, "", 0);
 close(fd);
 return (1);
 }
