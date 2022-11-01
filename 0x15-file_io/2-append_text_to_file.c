@@ -16,7 +16,7 @@ size_t len;
 if (!filename)
 return (-1);
 
-fd = open(filename, O_WRONLY | O_APPEND, 0);
+fd = open(filename, O_WRONLY | O_APPEND);
 if (fd == -1)
 return (-1);
 
