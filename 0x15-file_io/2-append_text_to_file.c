@@ -26,7 +26,10 @@ text_content = "";
 len = strlen(text_content);
 
 if (write(fd, text_content, len) == -1)
-close(fd), return (-1);
+{
+close(fd);
+return (-1);
+}
 
 close(fd);
 return (1);
