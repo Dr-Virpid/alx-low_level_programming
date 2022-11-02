@@ -50,3 +50,27 @@ exit(100);
 }
 return (0);
 }
+
+/**
+ * error_file - checks if files cannot be opened and prints
+ * the appropriate statement if they can't
+ *
+ * @from_fd: file descriptor to from file
+ * @to_fd: file descriptor to destination file
+ * @argv: arguments array
+ */
+void error_file(int from_fd, int to_fd, char *argv[])
+{
+if (from_fd == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+exit(98);
+}
+
+if (to_fd == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+exit(99);
+}
+
+}
