@@ -4,8 +4,8 @@ void error_file(int from_fd, int to_fd, char *argv[]);
 
 /**
  * main - copies the content of a file to a new file
- * argc: argument count
- * argv: argument array
+ * @argc: argument count
+ * @argv: argument array
  * Return: 0
  */
 int main(int argc, char *argv[])
