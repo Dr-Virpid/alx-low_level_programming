@@ -1,5 +1,6 @@
 #include "main.h"
 
+void error_file(int from_fd, int to_fd, char *argv[]);
 
 /**
  * main - copies the content of a file to a new file
@@ -9,43 +10,43 @@
  */
 int main(int argc, char *argv[])
 {
-int file_from, file_to, err_close;
-	ssize_t nchars, nwr;
-	char buf[1024];
+int from_fd, to_fd, nclose;
+ssize_t nread, nwrite;
+char buff[1024];
 
-	if (argc != 3)
-	{
-		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
-		exit(97);
-	}
+if (argc != 3)
+{
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+exit(97);
+}
 
-	file_from = open(argv[1], O_RDONLY);
-	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	error_file(file_from, file_to, argv);
+from_fd = open(argv[1], O_RDONLY);
+to_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+error_file(from_fd, to_fd, argv);
 
-	nchars = 1024;
-	while (nchars == 1024)
-	{
-		nchars = read(file_from, buf, 1024);
-		if (nchars == -1)
-			error_file(-1, 0, argv);
-		nwr = write(file_to, buf, nchars);
-		if (nwr == -1)
-			error_file(0, -1, argv);
-	}
+nread = 1024;
+while (nread == 1024)
+{
+nread = read(from_fd, buff, 1024);
+if (nread == -1)
+error_file(-1, 0, argv);
+nwrite = write(to_fd, buff, nread);
+if (nwrite == -1)
+error_file(0, -1, argv);
+}
 
-	err_close = close(file_from);
-	if (err_close == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
-		exit(100);
-	}
+nclose = close(from_fd);
+if (nclose == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from_fd);
+exit(100);
+}
 
-	err_close = close(file_to);
-	if (err_close == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
-		exit(100);
-	}
-	return (0);
+nclose = close(to_fd);
+if (nclose == -1)
+{
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from_fd);
+exit(100);
+}
+return (0);
 }
