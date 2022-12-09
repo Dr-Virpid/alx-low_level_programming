@@ -6,7 +6,7 @@
  *
  * Return: number of elements in linked list
  */
-size_t print_dlistint(const dlistint_t *h);
+size_t print_dlistint(const dlistint_t *h)
 {
 	dlistint_t *ptr = h;
 	size_t count;
