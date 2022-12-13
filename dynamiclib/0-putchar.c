@@ -1,19 +1,14 @@
-#include <stdio.h>
-#include "main.h"
+#include <unistd.h>
 
 /**
- * main - prints out a string
- * Return: returns 0 after completion
+ * _putchar - writes the character c to stdout
+ *
+ * @c: The character to print
+ *
+ * Return: On success 1
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int main(void)
+int _putchar(char c)
 {
-int i = 0;
-char letter[9] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
-while (i < 9)
-{
-char d = letter[i];
-_putchar(d);
-i++;
-}
-return (0);
+	return (write(1, &c, 1));
 }
